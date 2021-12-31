@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>registeration form</title>
+    <script>
+        function validateform1(){
+            var a=document.forms["myform"]["fname"].value;
+            var b=document.forms["myform"]["phn"].value;
+            var e=document.forms["myform"]["uname"].value;
+            var f=document.forms["myform"]["psw"].value;
+            var d=document.forms["myform"]["cpsw"].value;
+
+            if(a==""||b=="" ||d=="" ||e=="" ||f=="")
+            {
+                alert("must be filled .");
+                return false;
+            }
+            var b=document.myform.phn.value;
+            if(isNaN(b)||b.length!=10)
+            {
+                alert("Phone numer must be 10 digit Numeric value");
+                return false;
+            }
+            
+            var e=document.forms["myform"]["uname"].value;
+            var atpos=e.indexOf("@");
+            var dotpos=e.lastIndexOf(".");
+            if(e.length<6||atpos<1||dotpos<atpos+2||dotpos+2>e.length)
+            {
+                alert("Not a valid user name");
+                return false;
+            }
+            var f=document.forms["myform"]["psw"].value;
+            var d=document.forms["myform"]["cpsw"].value;
+            if(f!=d)
+            {
+              alert("enter correct password");
+              return false;
+            }
+            var f=document.forms["myform"]["psw"].value;
+            if(f.length<6)
+            {
+              alert("weak password");
+              return false;
+            }
+
+        }
+    </script>
+    </head>
+    <style>
+      h1.heas{
+        font-family: 'Times New Roman', Times, serif;
+        color: white;
+        background-color: deeppink;
+      }
+
+      * {
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 16px;
+  background-color: white;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.regbtn {
+  color: #fff;
+    background: linear-gradient(to right, #FF1493,#FF69B4 ,#FFB6C1);
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    line-height: 38px;
+    width: 20%;
+    font-size: 20px;
+    font-weight: 100;
+    height: 40px;
+    padding: 0;
+    border: none;
+    border-radius: 5px;
+    border: none;
+    display: inline-block;
+    transition: all 0.6s ease 0s;
+
+}
+
+.regbtn:hover {
+  opacity: 1;
+}
+
+.regbtn:hover{
+  color:black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+    </style>
+    <body>
+        
+        <h1 class="heas" align="center"> <em>Registration</em> </h1>
+        <form name="myform" method="post" action="http://localhost:8080/ipproj/details" onsubmit="return validateform1()">
+          <div class="container">
+        <b>Name:</b><input type="text" name="fname" required><br> <br>
+        <b>Phone number:</b><input type="text" name="phn" required><br> <br>
+        <b>Username:</b><input type="text" name="uname" required><br> <br>
+        <b>Password:</b><input type="password" name="psw" required><br> <br>
+        <b>Confirm Password:</b><input type="password" name="cpsw" required><br> <br>
+        <input type="submit" class="regbtn" value="Register">
+  
+      </div>
+        </form>
+
+    </body>
+</html>

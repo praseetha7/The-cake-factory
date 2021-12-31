@@ -1,0 +1,101 @@
+<html>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+    <title>home</title>
+    <style type="text/css">
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: pink;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: hotpink;
+}
+       
+        body {
+            background-color: white;
+            background-size: cover;
+            background-repeat: no-repeat;
+       
+        }img {
+            width: fit-content;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+       
+    </style>
+</head>
+<head>
+  <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+
+    <body align=center bgcolor=Red>
+        <section>
+            <img class="myslc" src="The cake factory.png" width="20%" heigth="30%">
+        </section>
+        <nav >
+            
+    <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="bakery.html">Bakery</a></li>
+        <li><a href="index.html">Logout</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href=""><i class="fa fa-shopping-basket" ></i></a></li>
+    </ul>
+          </nav>
+          <section>
+            <a href="#" imageanchor="1"><img class="mySlides" src="cake1.jpeg"
+                style="width: 80%"></a>
+            <a href="" imageanchor="1">
+            <img class="mySlides" src="https://media.istockphoto.com/photos/chocolate-mousse-cake-picture-id148465004?k=20&m=148465004&s=612x612&w=0&h=ROhb_yru3WqQ1JnOWDlhcyxrAMP3k_p8UlmzdnmMAHo="
+            style="width:80%"></a>
+            <a href="" imageanchor="1">
+            <img class="mySlides" src="https://media.istockphoto.com/photos/chocolate-mousse-cake-picture-id182385638?k=20&m=182385638&s=612x612&w=0&h=JKlstHYPK_9F9LfPZXYwy-Ou5Nb1_h7XtcXFl6B1Ea0="
+            style="width:80%"></a>
+          </section>
+
+          <script>
+            var myIndex = 0;
+            carousel();
+            
+            function carousel() {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              for (i = 0; i < x.length; i++) {
+                 x[i].style.display = "none";
+              }
+              myIndex++;
+              if (myIndex > x.length) {myIndex = 1}
+              x[myIndex-1].style.display = "block";
+              setTimeout(carousel, 3000);
+            }
+            </script>
+            
+            
+    </body>
+</html>

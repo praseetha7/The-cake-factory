@@ -1,0 +1,78 @@
+*{
+    margin:0;
+    padding:0;
+}
+.main{
+    width:100%;
+    background:linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(imgip1.jpg);
+    background-position: center;
+    background-size:cover;
+    height:190vh;
+
+}
+.navbar{
+    width:85%;
+    padding:35px 0;
+    margin:auto;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width:120px;
+    padding-left: 20px;
+    float:left;
+    padding-top:10px;
+}
+.menu{
+    width:400px;
+    float: left;
+    height:70px
+}
+ul{
+    float: left;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin: top 27px;
+    font-size: 14px;
+}
+ul li a{
+    text-decoration: none;
+    color: rgb(17, 8, 11);
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+ul li a:hover{
+    color:palevioletred
+}
+
+.wrapper{
+    max-width: 50px;
+    margin:150px auto;
+
+}
+.wrapper .search-input{
+    background: #fff;
+    width:100%;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0px 1px 5px 3px rgba(0,0,0,12);
+}
+.search{
+    width: 330px;
+    float:left;
+    margin-left:270px;
+}
+.search-input{
+    
+}
+
+.srch:focus{
+    outline: none;
+}

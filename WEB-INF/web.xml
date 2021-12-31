@@ -1,0 +1,10 @@
+<web-app>
+<servlet>
+<servlet-name>registerf</servlet-name>
+<servlet-class>registerf</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>registerf</servlet-name>
+<url-pattern>/details</url-pattern>
+</servlet-mapping>
+</web-app>

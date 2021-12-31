@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Login form</title>
+    <script>
+        
+    </script>
+    </head>
+    <style>
+      h1.heas{
+        font-family: 'Times New Roman', Times, serif;
+        color: white;
+        background-color: deeppink;
+      }
+
+      * {
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 16px;
+  background-color: white;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.logbtn {
+  color: #fff;
+    background: linear-gradient(to right, #FF1493,#FF69B4 ,#FFB6C1);
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    line-height: 38px;
+    width: 20%;
+    font-size: 20px;
+    font-weight: 100;
+    height: 40px;
+    padding: 0;
+    border: none;
+    border-radius: 5px;
+    border: none;
+    display: inline-block;
+    transition: all 0.6s ease 0s;
+
+}
+
+.logbtn:hover {
+  opacity: 1;
+}
+
+.logbtn:hover{
+  color:black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+    </style>
+    <body>
+        
+        <h1 class="heas" align="center"> <em>Login</em> </h1>
+        <form name="myform" method="post" action="loginf.jsp" >
+          <div class="container">
+       
+        <b>Username:</b><input type="text" name="uname" placeholder="Enter username" required><br> <br>
+        <b>Password:</b><input type="password" name="psw" placeholder="Enter password" required><br> <br>
+        <input type="submit" class="logbtn" value="Login">
+  
+      </div>
+        </form>
+
+    </body>
+</html>
